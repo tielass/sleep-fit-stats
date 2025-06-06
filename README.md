@@ -1,5 +1,12 @@
 # Sleep-Fit-Stats
 
+![GitHub last commit](https://img.shields.io/github/last-commit/tielass/sleep-fit-stats)
+![GitHub issues](https://img.shields.io/github/issues/tielass/sleep-fit-stats)
+![License](https://img.shields.io/badge/license-Private-red)
+![TypeScript](https://img.shields.io/badge/TypeScript-4.9.5-blue)
+![Next.js](https://img.shields.io/badge/Next.js-15.3.3-black)
+![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
+
 A comprehensive application for tracking sleep patterns and fitness metrics, providing insights into health and wellness habits.
 
 ## Project Overview
@@ -23,13 +30,19 @@ Sleep-Fit-Stats is a web application designed to help users track and analyze th
 - **Language**: TypeScript
 - **Styling**: Styled Components
 - **Data Visualization**: Chart.js with react-chartjs-2
+- **State Management**: Zustand (for UI state) & TanStack Query (for server state)
+- **Testing**: Jest with React Testing Library
+- **Build Tools**: Next.js built-in bundler
 
 ### Backend
 
 - **Runtime**: Node.js
 - **Framework**: Express
+- **Language**: TypeScript
 - **API**: RESTful endpoints
+- **Authentication**: JWT-based auth
 - **Database**: (To be determined)
+- **Testing**: Jest with Supertest
 
 ## Getting Started
 
