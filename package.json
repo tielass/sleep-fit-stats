@@ -16,6 +16,7 @@
     "test": "echo \"No tests yet, but pre-commit hook will pass\"",
     "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "lint": "eslint \"**/*.{js,jsx,ts,tsx}\" --fix",
-    "lint:check": "eslint \"**/*.{js,jsx,ts,tsx}\""
+    "lint:check": "eslint \"**/*.{js,jsx,ts,tsx}\"",
+    "fix-line-endings": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\" && eslint \"**/*.{js,jsx,ts,tsx}\" --fix"
   }
 }

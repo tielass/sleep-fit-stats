@@ -1,0 +1,8 @@
+{
+  "editor.formatOnSave": true,
+  "files.eol": "\n",
+  "prettier.endOfLine": "auto",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  }
+}

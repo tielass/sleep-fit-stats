@@ -22,7 +22,7 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'react', 'prettier'],
   rules: {
-    'prettier/prettier': 'error',
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
     'react/react-in-jsx-scope': 'off', // Not needed in Next.js
     'react/prop-types': 'off', // Using TypeScript instead
     '@typescript-eslint/explicit-module-boundary-types': 'off',
