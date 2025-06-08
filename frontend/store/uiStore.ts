@@ -9,6 +9,17 @@ interface UIStore {
   // UI Theme/Preferences
   isDarkMode: boolean;
   toggleDarkMode: () => void;
+  themeColors: {
+    primary: string;
+    secondary: string;
+    accent: string;
+    text: string;
+    textSecondary: string;
+    background: string;
+    backgroundSecondary: string;
+    alert: string;
+    success: string;
+  };
 
   // UI State
   isSidebarOpen: boolean;
@@ -46,6 +57,17 @@ export const useUIStore = create<UIStore>((set) => ({
       ? window.matchMedia('(prefers-color-scheme: dark)').matches
       : false,
   toggleDarkMode: () => set((state) => ({ isDarkMode: !state.isDarkMode })),
+  themeColors: {
+    primary: 'var(--night-blue)',
+    secondary: 'var(--slate-blue)',
+    accent: 'var(--active-green)',
+    text: 'var(--light-text)',
+    textSecondary: 'var(--muted-text)',
+    background: 'var(--background-primary)',
+    backgroundSecondary: 'var(--background-secondary)',
+    alert: 'var(--alert-red)',
+    success: 'var(--forest-green)',
+  },
 
   // UI State
   isSidebarOpen: true,

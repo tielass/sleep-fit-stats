@@ -1,0 +1,42 @@
+/**
+ * Sleep-Fit-Stats Color Palette
+ * A cohesive color scheme for sleep and fitness tracking visuals
+ */
+
+:root {
+  /* Core Theme Colors */
+  --night-blue: #0F1729;       /* darkBg - for main backgrounds, represents night time */
+  --active-green: #00FF7F;     /* lightGreen - for active states, energy metrics */
+  --slate-blue: #2D3748;       /* lightBlueGrayBg - for sleep quality graphs, calm states */
+  --deep-slate: #1E2533;       /* darkGrayBg - for inactive or rest periods */
+  --alert-red: #F45E5E;        
+  --forest-green: #2FA577;    
+  --light-text: #E2E8F0;       
+  --muted-text: #717A8C;       
+
+  /* Derived Theme Colors */
+  --sleep-primary: var(--night-blue);
+  --sleep-secondary: var(--slate-blue);
+  --fitness-primary: var(--forest-green);
+  --fitness-accent: var(--active-green);
+  --alert-color: var(--alert-red);
+  --background-primary: var(--night-blue);
+  --background-secondary: var(--deep-slate);
+  --text-primary: var(--light-text);
+  --text-secondary: var(--muted-text);
+  
+  /* Gradient Combinations */
+  --sleep-gradient: linear-gradient(to right, var(--night-blue), var(--slate-blue));
+  --fitness-gradient: linear-gradient(to right, var(--forest-green), var(--active-green));
+  --progress-gradient: linear-gradient(to right, var(--slate-blue), var(--active-green));
+}
+
+/* 
+Usage examples:
+- Sleep graphs: --sleep-primary, --sleep-secondary
+- Fitness metrics: --fitness-primary, --fitness-accent
+- Goal completion: --forest-green
+- Warnings: --alert-red
+- Background: --background-primary, --background-secondary
+- Text: --text-primary, --text-secondary
+*/
